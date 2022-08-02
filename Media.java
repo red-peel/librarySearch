@@ -1,47 +1,82 @@
-abstract class Media{
+abstract class Media {
     protected String title;
     protected String type;
     protected String genre;
     protected String author;
+    protected boolean isAvailable;
 
-    public Media(String title, String type, String genre, String author){
+    public Media(String title, String type, String genre, String author, boolean isAvailable) {
         this.title = title;
         this.type = type;
         this.genre = genre;
         this.author = author;
-        System.out.println("Media: " + title + ". has been created");
+        this.isAvailable = isAvailable;
     }
-    //setters (return nothing, print item)
-    void setTitle(String title){
+
+    @Override
+    public String toString() {
+        return title + " by " + author;
+    }
+
+    // setters (return nothing, print item)
+    void setTitle(String title) {
         this.title = title;
         System.out.println("The title is set to " + this.title);
     }
-    void setType(String type){
+
+    void setType(String type) {
         this.type = type;
         System.out.println("The type is set to " + this.type);
     }
-    void setGenre(String genre){
+
+    void setGenre(String genre) {
         this.genre = genre;
         System.out.println("The genre is set to " + this.genre);
     }
-    void setAuthor(String author){
+
+    void setAuthor(String author) {
         this.author = author;
         System.out.println("The author is set to " + this.author);
     }
-    
-    //getters (return strings)
-    protected String getTitle(){
+
+    void setIsAvailable(boolean isAvailable) {
+        this.isAvailable = isAvailable;
+        if (isAvailable) {
+            System.out.println(getTitle() + " is now available");
+        } else {
+            System.out.println(getTitle() + " is now unavailable");
+        }
+    }
+
+    // getters (return strings)
+    public String getTitle() {
         return title;
     }
-    protected String getType(){
+
+    public String getType() {
         return type;
     }
-    protected String getGenre(){
+
+    public String getGenre() {
         return genre;
     }
-    protected String getAuthor() {
+
+    public String getAuthor() {
         return author;
     }
-    //abstract
+
+    // other methods
+    // returns the string "available" or "unavailable" depending on isAvailable value (true or false)
+    public String availibilityCheck(){
+        if(isAvailable){
+            return "available";
+        }
+        else{
+            return "unavailable";
+        }
+    }
+
+    // abstract
     abstract String getInfo();
+
 }
