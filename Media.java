@@ -1,9 +1,16 @@
-abstract class media{
+abstract class Media{
     protected String title;
     protected String type;
     protected String genre;
     protected String author;
-    
+
+    public Media(String title, String type, String genre, String author){
+        this.title = title;
+        this.type = type;
+        this.genre = genre;
+        this.author = author;
+        System.out.println("Media: " + title + ". has been created");
+    }
     //setters (return nothing, print item)
     void setTitle(String title){
         this.title = title;
@@ -35,6 +42,6 @@ abstract class media{
     protected String getAuthor() {
         return author;
     }
-
+    //abstract
     abstract String getInfo();
 }
