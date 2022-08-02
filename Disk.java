@@ -1,16 +1,15 @@
-public class Book extends Media {
-    private int pageCount;
-    private boolean isPageCountEnabled;
+public class Disk extends Media {
+    private int lengthMinutes;
 
     // CONSTRUCTOR WITH NO PAGE NUMBER
-    public Book(String title, String type, String genre, String author,boolean isAvailable) {
+    public Disk(String title, String type, String genre, String author,boolean isAvailable, int lengthMinutes) {
         super(title, type, genre, author,isAvailable);
-        isPageCountEnabled = false;
+        this.lengthMinutes = lengthMinutes;
         // UNCOMMENT BELOW TO SEE WHEN OBJECT HAS BEEN CREATED
-        // System.out.println("Book: " + title + ". has been created");
+        // System.out.println("Disk: " + title + ". has been created");
     }
     @Override
     public String getInfo() {
-        return this.toString() + " is a " + this.type + " book with: " + this.pageCount + " pages. Its genre: " + this.genre + "and it is "+ this.availibilityCheck();
+        return this.toString() + " is a " + this.genre + this.type + " disk. This disk is"+ this.lengthMinutes+ "long and is" + this.availibilityCheck() +" for checkout.";
     }
 }
