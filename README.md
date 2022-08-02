@@ -11,6 +11,8 @@ You are be able to filter by title, year created, author, country of origin and 
 
 Thank you for your time.
 
+You can view the link to the repository where this code is stored here at [GitHub](https://github.com/red-peel/librarySearch)
+
 **NOTE:**
 
 **The information in the JSON file has some bugs. Parsing characters from different languages did not play well with something. This is not a bug in the program, just some weird characters in the JSON file. This can be fixed through editing the JSON but I felt unescessary doing so as it does not change the fact that the program works.**
@@ -27,6 +29,6 @@ I'm a an aspiring developer currently in the MITxPro Certification Program for F
 
 I love to build computers, take photographs, and play video games.
 
-If you'd like to learn more about what I am working on in github [click here.](https://github.com/red-peel)
+If you'd like to learn more about what I am working on at github [click here.](https://github.com/red-peel)
 
 If you'd like to take a break and look at my art and photography [click here.](https://www.instagram.com/slurpe_ee/)
