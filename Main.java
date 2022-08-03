@@ -41,10 +41,12 @@ class Main {
     libraryList.add(declaration);
     libraryList.add(daft);
     libraryList.add(things);
+    System.out.println("Library Loaded");
     // main menu
     while (true) {
       emptyLine();
-      System.out.println("Please select an option...");
+      System.out.println("Library Management");
+      System.out.println("Please select an option... (Enter a number to select)");
       System.out.println("1. Print Library");
       System.out.println("2. Add new item to library");
       System.out.println("3. Search Library by Title");
@@ -123,7 +125,7 @@ class Main {
     wait(timeVar);
 
     // SUBMENU
-    System.out.println("What type of new item would you like to add? (enter number)");
+    System.out.println("What type of new item would you like to add? (Enter a number to select)");
     System.out.println("1. Disk");
     System.out.println("2. Book");
     System.out.println("3. Document");
@@ -137,9 +139,9 @@ class Main {
         case "1": {
           System.out.println("Please enter the title of the disk");
           String newTitle = innerScan.nextLine();
-          System.out.println("Please enter type (Audio, Video, Software)");
+          System.out.println("Please enter type (Audio, Video, Software, etc.)");
           String newType = innerScan.nextLine();
-          System.out.println("Please enter the genre (Subtype such as music genre, film genre, game software)");
+          System.out.println("Please enter the genre (Subtype such as music genre, film genre, game software, etc.)");
           String newGenre = innerScan.nextLine();
           System.out.println("Please enter the author");
           String newAuthor = innerScan.nextLine();
@@ -155,7 +157,7 @@ class Main {
         case "2": {
           System.out.println("Please enter the title of the book");
           String newTitle = innerScan.nextLine();
-          System.out.println("Please enter type (Fiction or Non-Fiction)");
+          System.out.println("Please enter type (Fiction, Non-Fiction, etc.)");
           String newType = innerScan.nextLine();
           System.out.println("Please enter the genre");
           String newGenre = innerScan.nextLine();
