@@ -41,7 +41,7 @@ If you'd like to take a break and look at my art and photography [click here.](h
 ## TODO:
 
 
-REVATURE REQUIREMENTS
+1. REVATURE REQUIREMENTS
 
 - [X] Inheritance, Polymorphism (overloading or overriding), Encapsulation, Abstraction (Abstract class or Interface)(Media is Parent, Each class has at least one overload/override, )
 
@@ -59,10 +59,10 @@ REVATURE REQUIREMENTS
 
 - [X] Use one of the Collections structures. (ArrayList OF THE OBJECT MEDIA)
 
-- [ ] Use a loop to traverse through the Collection structure that you chose and modify, organize or return values from the iteration. (USE TO SEARCH THROUGH ArrayList)
+- [X] Use a loop to traverse through the Collection structure that you chose and modify, organize or return values from the iteration. (USE TO SEARCH THROUGH ArrayList)
 
 
-FOR SELF
+2. FOR SELF
 
 - [ ] Import a library for json reading and create a method to add books to the ArrayList
 
