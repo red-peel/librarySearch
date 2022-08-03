@@ -6,14 +6,17 @@ DONE
 DONE
     Must create and use at least 3 Constructors(POSSIBLY TWO PER CLASS)
 
-Must have at least 4 methods (UHH IDK YET)
+DONE
+    Must have at least 4 methods (UHH IDK YET)
 
-Use a Scanner to get responses from the user (MAIN MENU INPUT)
+DONE
+    Use a Scanner to get responses from the user (MAIN MENU INPUT)
 
-Must contain a switch statement (MAIN MENU INPUT, DISK TYPE, DOCUMENT TYPE)
+DONE    
+    Must contain a switch statement (MAIN MENU INPUT, DISK TYPE, DOCUMENT TYPE)
 
 
-Must handle at least 1 exception (USER INPUT OUT OF BOUNDS IN MAIN MENU)
+    Must handle at least 1 exception (USER INPUT OUT OF BOUNDS IN MAIN MENU, TIME INTERRUPTS)
 
 DONE
     The project must include at least 3 Classes (MEDIA, DOCUMENT, DISK, BOOK)
