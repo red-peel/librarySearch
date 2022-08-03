@@ -22,10 +22,10 @@ public class Disk extends Media {
     @Override
     public String getInfo() {
         if (isMinutesAvailable){
-            return this.toString() + " is a " + this.genre +" "+ this.type + " disk. This disk is"+ this.lengthMinutes+ "long and is" + this.availibilityCheck() +" for checkout.";
+            return this.toString() + " is a " + this.genre +" "+ this.type + " disk. This disk is "+ this.lengthMinutes+ "long and is" + this.availibilityCheck() +" for checkout.";
         }
         else{
-            return this.toString() + " is a " + this.genre +" "+ this.type + " disk. This disk is" + this.availibilityCheck() +" for checkout.";
+            return this.toString() + " is a " + this.genre +" "+ this.type + " disk. This disk is " + this.availibilityCheck() +" for checkout.";
         }
  
     }

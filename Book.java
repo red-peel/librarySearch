@@ -24,7 +24,7 @@ public class Book extends Media {
     @Override
     public String getInfo() {
         if (isPageCountEnabled) {
-            return this.toString() + " is a " + this.type + " book with: " + this.pageCount + " pages. Its genre: " + this.genre + "and it is "+ this.availibilityCheck();
+            return this.toString() + " is a " + this.type + " book with: " + this.pageCount + " pages. Its genre: " + this.genre + " and it is "+ this.availibilityCheck();
         } else {
             return this.toString() + " is a " + this.type + ". Its genre is " + this.genre + " and it is "+ this.availibilityCheck();
         }

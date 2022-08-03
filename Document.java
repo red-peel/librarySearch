@@ -28,10 +28,10 @@ public class Document extends Media{
     @Override
     public String getInfo() {
         if(isConfidentialAvailable){
-            return this.toString() + " is a " + this.type + " Document. This Document is" +confidentialCheck() + " and is" + this.availibilityCheck() +" for checkout.";
+            return this.toString() + " is a " + this.type + " Document. This Document is " +confidentialCheck() + " and is " + this.availibilityCheck() +" for checkout.";
         }
         else{
-            return this.toString() + " is a " + this.type + " Document. This Document is" + this.availibilityCheck() +" for checkout.";
+            return this.toString() + " is a " + this.type + " Document. This Document is " + this.availibilityCheck() +" for checkout.";
         }   
     }
 
