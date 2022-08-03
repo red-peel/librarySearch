@@ -43,11 +43,13 @@ class Main {
     libraryList.add(things);
     // main menu
     while (true) {
+      emptyLine();
       System.out.println("Please select an option...");
       System.out.println("1. Print Library");
       System.out.println("2. Add new item to library");
       System.out.println("3. Search Library by Title");
       System.out.println("E. Exit");
+      emptyLine();
       String input = scan.nextLine();
       wait(1500);
       int timeVar2 = 1000;
@@ -55,18 +57,21 @@ class Main {
         case "1": {
           System.out.println("Printing Library...");
           wait(timeVar2);
+          emptyLine();
           printLibrary();
           break;
         }
         case "2": {
           System.out.println("Add new item");
           wait(timeVar2);
+          emptyLine();
           addNewItem();
           break;
         }
         case "3": {
           System.out.println("Search Library");
           wait(timeVar2);
+          emptyLine();
           searchLibrary();
           break;
         }
@@ -85,7 +90,9 @@ class Main {
 
   }
   // MAIN METHODS
-
+  public static void emptyLine(){
+    System.out.println();
+  }
   // wait method (HANDLES InterruptedException and allows for delays for aesthetic
   // purposes
   public static void wait(int ms) {
@@ -101,6 +108,7 @@ class Main {
 
   public static void printLibrary() {
     System.out.println(libraryList.toString());
+    emptyLine();
     wait(timeVar);
   }
 
@@ -123,6 +131,7 @@ class Main {
     boolean quit = false;
     do {
       String newItemOption = innerScan.nextLine();
+      emptyLine();
       switch (newItemOption) {
         // Book Create
         case "1": {
@@ -137,6 +146,7 @@ class Main {
           Disk newDisk = new Disk(newTitle, newType, newGenre, newAuthor, true);
           libraryList.add(newDisk);
           wait(1000);
+          emptyLine();
           quit = true;
           break;
         }
@@ -154,6 +164,7 @@ class Main {
           Book newBook = new Book(newTitle, newType, newGenre, newAuthor, true);
           libraryList.add(newBook);
           wait(1000);
+          emptyLine();
           quit = true;
           break;
         }
@@ -171,6 +182,7 @@ class Main {
           Document newDocument = new Document(newTitle, newType, newGenre, newAuthor, true);
           libraryList.add(newDocument);
           wait(1000);
+          emptyLine();
           quit = true;
           break;
         }
