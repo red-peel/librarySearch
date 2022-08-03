@@ -136,6 +136,7 @@ class Main {
           String newAuthor = innerScan.nextLine();
           Disk newDisk = new Disk(newTitle, newType, newGenre, newAuthor, true);
           libraryList.add(newDisk);
+          wait(1000);
           quit = true;
           break;
         }
@@ -152,6 +153,7 @@ class Main {
           String newAuthor = innerScan.nextLine();
           Book newBook = new Book(newTitle, newType, newGenre, newAuthor, true);
           libraryList.add(newBook);
+          wait(1000);
           quit = true;
           break;
         }
@@ -168,6 +170,7 @@ class Main {
           String newAuthor = innerScan.nextLine();
           Document newDocument = new Document(newTitle, newType, newGenre, newAuthor, true);
           libraryList.add(newDocument);
+          wait(1000);
           quit = true;
           break;
         }
