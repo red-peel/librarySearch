@@ -7,7 +7,7 @@ public class Book extends Media {
         super(title, type, genre, author,isAvailable);
         isPageCountEnabled = false;
         // UNCOMMENT BELOW TO SEE WHEN OBJECT HAS BEEN CREATED
-        // System.out.println("Book: " + title + ". has been created");
+        System.out.println("Book: " + title + ". has been created");
     }
 
     // CONSTRUCTOR WITH PAGE NUMBER
@@ -16,9 +16,11 @@ public class Book extends Media {
         this.pageCount = pageCount;
         isPageCountEnabled = true;
         // UNCOMMENT BELOW TO SEE WHEN OBJECT HAS BEEN CREATED
-        // System.out.println("Book: " + title + ". has been created with: " + this.pageCount + " pages");
+        System.out.println("Book: " + title + ". has been created with: " + this.pageCount + " pages");
     }
-
+    
+    // other methods
+    // returns information about the book depending on the existence of the pageCount
     @Override
     public String getInfo() {
         if (isPageCountEnabled) {
